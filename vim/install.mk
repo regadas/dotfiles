@@ -1,4 +1,4 @@
 vim-install: homebrew-install
-	brew install vim
+	@test -e /usr/local/bin/vim || brew install vim
 
 include homebrew/install.mk

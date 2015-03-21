@@ -1,5 +1,5 @@
 
-httpie-install: homebrew-install
-	pip install -U httpie
+httpie-install: python-install
+	@test -e /usr/local/bin/http || pip install -U httpie
 
-include homebrew/install.mk
+include python/install.mk
