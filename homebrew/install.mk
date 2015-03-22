@@ -1,6 +1,5 @@
+HOMEBREW_URL = "https://raw.githubusercontent.com/Homebrew/install/master/install"
+
 homebrew-install:
-	@if test ! $(which brew); \
-	then \
-		ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"; \
-	fi
+	@test -e /usr/local/bin/brew || ruby -e "$$(curl -fsSL ${HOMEBREW_URL})"
 
