@@ -1,15 +1,14 @@
 
 all: ack
 
-ack: ack-install ack-symlink
+ack: ack-install ack-symlinks
 
 ack-install: homebrew
 	@test -e /usr/local/bin/ack || brew install ack
 
-ack-symlink:
-	@ln -sf $(MK_DIR)/ackrc $(HOME)/.ackrc
+ack-symlinks: symlinks
 
-.PHONY: all ack ack-install ack-symlink
+.PHONY: all ack ack-install ack-symlinks
 
 include base.mk
 include homebrew/install.mk
