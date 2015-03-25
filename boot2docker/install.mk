@@ -3,6 +3,6 @@ all: boot2docker
 boot2docker: virtualbox
 	@test -e /usr/local/bin/boot2docker || brew install boot2docker
 
-.PHONY: all virtualbox
+.PHONY: all boot2docker
 
-include cask/install.mk
+include virtualbox/install.mk
