@@ -9,6 +9,10 @@ fi
 # Fix: vim horizontal split
 stty -ixon -ixoff
 
+if [[ -a /usr/local/bin/virtualenvwrapper.sh ]]
+then
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
