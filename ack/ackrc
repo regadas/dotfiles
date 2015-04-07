@@ -1,6 +1,5 @@
 --group
 --sort-files
---show-types
 --color
 
 --ignore-dir=.git
