@@ -1,2 +1,2 @@
-set noautochdir
-let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts = 1
+let g:spf13_no_autochdir = 1

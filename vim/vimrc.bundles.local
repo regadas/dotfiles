@@ -1,2 +1,3 @@
 Bundle 'fatih/vim-go'
 Bundle 'nanotech/jellybeans.vim'
+Bundle 'spf13/vim-autoclose'
