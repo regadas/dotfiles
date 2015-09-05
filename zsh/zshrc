@@ -1,5 +1,7 @@
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+export GOPATH=$HOME/projects/go
+export PATH=$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -21,3 +23,5 @@ if [[ -a ~/.localrc ]]
 then
   source ~/.localrc
 fi
+
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
